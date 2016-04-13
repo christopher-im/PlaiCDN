@@ -213,7 +213,7 @@ for i in range(len(sys.argv)):
         try:
             tmd_var = urllib.request.urlopen(base_url + '/tmd')
         except urllib.error.URLError as e:
-            print('Could not retrieve tmd; received error: ' + e)
+            print('Could not retrieve tmd; received error: ' + str(e))
             continue
         tmd_var = tmd_var.read()
 
